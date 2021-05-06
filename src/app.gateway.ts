@@ -10,7 +10,7 @@ import {
 import { Server, Socket } from 'socket.io';
 import { SymbolPrice } from './crypto-compare/crypto-compare.interface';
 
-@WebSocketGateway(Number(process.env.PORT))
+@WebSocketGateway(Number(process.env.BCB_WEBSOCKET_PORT))
 export class AppGateway implements OnGatewayInit, OnGatewayConnection, OnGatewayDisconnect {
     private logger: Logger = new Logger('AppGateway');
 
