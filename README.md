@@ -48,7 +48,9 @@ Nice to haves
  * Some pairs haven't had quotes and need to implement a pulling solution to feed into websocket stream
  * This was a small project but if larger them we need to look ar the file structure
  * Do performance a tress testing to determine production level loads.
- * Spend time on completing the API documentation  
+ * Spend time on completing the API documentation 
+ * Securing endpoint if not behind a API gateway.
+ * Flood detection DoS attacks if not behind API gateway  
 
 
 ## MIT License
