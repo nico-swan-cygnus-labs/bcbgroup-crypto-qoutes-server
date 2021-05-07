@@ -20,6 +20,7 @@ export class AppGateway implements OnGatewayInit, OnGatewayConnection, OnGateway
     @WebSocketServer() server: Server;
     constructor(private eventEmitter: EventEmitter2) {
         this.nrActiveConnections = 0;
+        this.activeClients = new Map();
     }
 
     /**
